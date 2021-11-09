@@ -64,7 +64,7 @@ https://github.com/kangmasjuqi/leadbook/blob/main/Final_Leadbook_Screencast-2021
 
 Note :
 
-For feature Register & Forgot Password I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log. Don't forget to replace `&amp;` to `&` in the generated link.
+For feature Register & Forgot Password I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log. Don't forget to replace `&amp;` string into `&` char in the generated link if you are going to use that generated link.
 
 ### F. Author Contact
 
