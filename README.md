@@ -1,5 +1,7 @@
 # LEADBOOK 
 
+## PHP Full Stack Developer | ProgrammingChallenge
+
 ### 0. My Env Snapshot
 
     php -v
@@ -34,7 +36,7 @@
 
     1. run command : mkdir storage && chmod -R 755 storage
 
-    2. run command : composer install
+    2. run command : rm composer.lock && composer install
 
     3. run command : php artisan key:generate
 
@@ -47,7 +49,7 @@
 
 ### C. Setup Frontend
 
-    1. run command : yarn install
+    1. run command : rm yarn.lock && yarn install
 
 
 ### D. Access web app :
@@ -66,7 +68,7 @@ File :
 
 Note :
 
-For Register & Forgot Password feature I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log
+    For feature Register & Forgot Password I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log. Don't forget to replace `&amp;` to `&` in the generated link.
 
 ### F. Author Contact
 
