@@ -68,7 +68,7 @@ File :
 
 Note :
 
-    For feature Register & Forgot Password I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log. Don't forget to replace `&amp;` to `&` in the generated link.
+For feature Register & Forgot Password I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log. Don't forget to replace `&amp;` to `&` in the generated link.
 
 ### F. Author Contact
 
