@@ -32,15 +32,13 @@
 
 ### B. Setup Backend
 
-    1. run command : mkdir storage && chmod -R 755 storage
+    1. run command : composer install
 
-    2. run command : composer install
+    2. run command : php artisan key:generate
 
-    3. run command : php artisan key:generate
+    3. run command : php artisan migrate
 
-    4. run command : php artisan migrate
-
-    5. run command : php artisan db:seed
+    4. run command : php artisan db:seed
 
 *default generated user password would be : "secret"
 
