@@ -34,7 +34,7 @@
 
     1. run command : mkdir storage && chmod -R 755 storage
 
-    2. run command : rm composer.lock && composer install
+    2. run command : composer install
 
     3. run command : php artisan key:generate
 
@@ -47,7 +47,7 @@
 
 ### C. Setup Frontend
 
-    1. run command : rm yarn.lock && yarn install
+    1. run command : yarn install
 
 
 ### D. Access web app :
