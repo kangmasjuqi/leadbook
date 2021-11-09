@@ -47,21 +47,21 @@ class AuthController extends BaseController
             'activation_link' => $activation_link
         ];
 
-        // try {
-        //     Mail::to($new_user->email)->send(new ActivationMail($details));
+        try {
+            Mail::to($new_user->email)->send(new ActivationMail($details));
 
-        //     if (count(Mail::failures()) > 0) {
-        //         throw new Exception(Mail::failures());
-        //     }
-        // } catch (Exception $e) {
-        //     Log::error('Failed to send Activation Email to ' . $new_user->email .
-        //         ' with error : ' . $e->getMessage());
-        //     return $this->sendError(
-        //         'Failed to send Activation Email to ' . $new_user->email,
-        //         [$e->getMessage()],
-        //         500
-        //     );
-        // }
+            if (count(Mail::failures()) > 0) {
+                throw new Exception(Mail::failures());
+            }
+        } catch (Exception $e) {
+            Log::error('Failed to send Activation Email to ' . $new_user->email .
+                ' with error : ' . $e->getMessage());
+            return $this->sendError(
+                'Failed to send Activation Email to ' . $new_user->email,
+                [$e->getMessage()],
+                500
+            );
+        }
 
         return $this->sendResponse('User created. Activation Email sent to ' 
             . $new_user->email, $details);
@@ -129,21 +129,21 @@ class AuthController extends BaseController
             'reset_link' => $reset_link
         ];
 
-        // try {
-        //     Mail::to($request->email)->send(new ResetPasswordMail($details));
+        try {
+            Mail::to($request->email)->send(new ResetPasswordMail($details));
 
-        //     if (count(Mail::failures()) > 0) {
-        //         throw new Exception(Mail::failures());
-        //     }
-        // } catch (Exception $e) {
-        //     Log::error('Failed to send Reset Password Email to ' . $request->email .
-        //         ' with error : ' . $e->getMessage());
-        //     return $this->sendError(
-        //         'Failed to send Reset Password Email to ' . $request->email,
-        //         [$e->getMessage()],
-        //         500
-        //     );
-        // }
+            if (count(Mail::failures()) > 0) {
+                throw new Exception(Mail::failures());
+            }
+        } catch (Exception $e) {
+            Log::error('Failed to send Reset Password Email to ' . $request->email .
+                ' with error : ' . $e->getMessage());
+            return $this->sendError(
+                'Failed to send Reset Password Email to ' . $request->email,
+                [$e->getMessage()],
+                500
+            );
+        }
 
         return $this->sendResponse('Email sent! Please check your inbox.', $details);
     }
