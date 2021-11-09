@@ -1,0 +1,83 @@
+
+[2021-11-09 17:07:27] localDEV.DEBUG: Message-ID: <31dbda1add625c9cd1cecccd56aae08b@127.0.0.1>
+Date: Tue, 09 Nov 2021 17:07:27 +0000
+Subject: Leadbook - Verify Email & Set your password
+From: 
+To: test2@test2.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leadbook</title>
+    <style>
+        * {
+            font-family: Arial, serif;
+            font-size:12px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body style="padding:16px;width:80%;">
+<p style="font-size:16px;font-weight: bold;">Welcome to Leadbook</p>
+<p>Hi test2,</p>
+<p>
+Please click this link to verify and set your password.</p>
+<p>
+    <a href="http://localhost:3000/reset-password?token=22%7C86x85R7fayZo0eL6MzyEbHTMxZ0djTYqwHQUbgjr&amp;email=test2%40test2.com"
+    style="color:#2b6dad;text-decoration:none;word-wrap:break-word !important;"
+    target="_blank">http://localhost:3000/reset-password?token=22%7C86x85R7fayZo0eL6MzyEbHTMxZ0djTYqwHQUbgjr&amp;email=test2%40test2.com</a>
+</p>
+<p>
+    Thanks,<br/>
+    Leadbook Support
+</p>
+</body>
+</html>
+  
+[2021-11-09 17:08:06] localDEV.DEBUG: Message-ID: <54c6b9611dbf83b93bcb4c0064366d0a@127.0.0.1>
+Date: Tue, 09 Nov 2021 17:08:06 +0000
+Subject: Leadbook - Reset your password
+From: 
+To: test2@test2.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leadbook</title>
+    <style>
+        * {
+            font-family: Arial, serif;
+            font-size:12px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body style="padding:16px;width:80%;">
+<p>Hi test2,</p>
+<p>
+    You requested to reset the password for your
+    Leadbook account
+    with the e-mail address (<a href="mailto:test2@test2.com" target="_blank">test2@test2.com</a>).
+    Please click this link to reset your password.
+</p>
+<p>
+    <a href="http://localhost:3000/reset-password?token=23%7CzgoWRLQhZrHarsDdhhLcZvTPOvbsMEYkuHzIlzqs&amp;email=test2%40test2.com"
+    style="color:#2b6dad;text-decoration:none;word-wrap:break-word !important;"
+    target="_blank">http://localhost:3000/reset-password?token=23%7CzgoWRLQhZrHarsDdhhLcZvTPOvbsMEYkuHzIlzqs&amp;email=test2%40test2.com</a>
+</p>
+<p>
+    Thanks,<br/>
+    Leadbook Support
+</p>
+<div style="font-size:11px;color:#999;margin-top: 25px;">
+    If you did not request a password reset, please feel free to ignore this message.
+</div>
+</body>
+</html>
+  
