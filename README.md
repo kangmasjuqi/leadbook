@@ -66,7 +66,7 @@ File :
 
 Note :
 
-    For feature Register & Forgot Password I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log
+For Register & Forgot Password feature I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log
 
 ### F. Author Contact
 
