@@ -16,7 +16,6 @@ const Register = () => {
     const [fullname, setFullname] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [registerStatus, setRegisterStatus] = useState(false);
-    const [activationLink, setActivationLink] = useState('');
 
     const handleInputChange = (event) => {
         event.target.classList.remove('is-invalid');
@@ -49,7 +48,6 @@ const Register = () => {
         createNewUserService(credentials)
             .then((response) => {
                 if (response.status === 200) {
-                    setActivationLink(response.data.data.activation_link);
                     setRegisterStatus(true);
                 }
             }).catch((err) => {
@@ -151,29 +149,23 @@ const Register = () => {
                                                     Email sent to ${email}, 
                                                     please check your inbox for verify email 
                                                     & set password
-                                                    ${activationLink}
                                                 `
                                             }
                                         </Alert>
                                     </div>
                                 </div>
                             )}
-                        {
-                            activationLink === ''
-                                ? (
-                                    <div className="row" style={{ paddingTop: '10px', color: 'white' }}>
-                                        <div className="col-12 text-right">
-                                            <Link
-                                                className="forgot-password-link"
-                                                to="/login"
-                                                style={{ textDecoration: 'underline' }}
-                                            >
-                                                Login
-                                            </Link>
-                                        </div>
-                                    </div>
-                                ) : ''
-                        }
+                        <div className="row" style={{ paddingTop: '10px', color: 'white' }}>
+                            <div className="col-12 text-right">
+                                <Link
+                                    className="forgot-password-link"
+                                    to="/login"
+                                    style={{ textDecoration: 'underline' }}
+                                >
+                                    Login
+                                </Link>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
