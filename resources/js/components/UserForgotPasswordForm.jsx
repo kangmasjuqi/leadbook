@@ -6,7 +6,6 @@ import { sendResetPasswordLinkService } from '../services/users';
 
 const ForgotPassword = () => {
     const [email, setEmail] = useState('');
-    const [resetLink, setResetLink] = useState('');
     const [errors, setErrors] = useState([]);
     const [success, setSuccess] = useState(false);
 
@@ -45,7 +44,6 @@ const ForgotPassword = () => {
         sendResetPasswordLinkService(payload).then((response) => {
             if (response.status === 200) {
                 setSuccess(true);
-                setResetLink(response.data.data.reset_link);
             } else {
                 throw new Error();
             }
@@ -86,7 +84,7 @@ const ForgotPassword = () => {
                         {
                             `
                                 Email sent to ${email}, please check your inbox 
-                                for reset password : ${resetLink}
+                                for reset password
                             `
                         }
                     </Alert>
