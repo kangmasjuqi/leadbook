@@ -60,7 +60,7 @@
 
     3. Access web app -> http://localhost:3000/login
 
-### E. Contacts
+### E. Author Contact
 
     e : marjuqi[dot]rahmat[at]gmail[dot]com
     p : +62-812-9579-8341
