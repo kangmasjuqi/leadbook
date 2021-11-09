@@ -1,7 +1,5 @@
 # LEADBOOK 
 
-## PHP Full Stack Developer | ProgrammingChallenge
-
 ### 0. My Env Snapshot
 
     php -v
@@ -62,7 +60,13 @@
 
 ### E. Screencast / Demo
 
-    File : https://github.com/kangmasjuqi/leadbook/blob/main/Leadbook_Screencast-2021.11.09-22_35_49.webm
+File : 
+
+    .....
+
+Note :
+
+    For feature Register & Forgot Password I did not exactly send email to the real account, but I store the email content in the laravel log instead https://github.com/kangmasjuqi/leadbook/blob/main/storage/logs/laravel.log
 
 ### F. Author Contact
 
