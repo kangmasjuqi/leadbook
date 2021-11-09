@@ -44,7 +44,7 @@
 
     5. run command : php artisan db:seed
 
-        *default generated user password would be : "secret"
+*default generated user password would be : "secret"
 
 
 ### C. Setup Frontend
@@ -54,11 +54,11 @@
 
 ### D. Access web app :
 
-    1. Start Backend : open terminal, run `php artisan serve`
+    1. Start Backend -> open terminal then run command : php artisan serve
 
-    2. Start Frontend : open terminal, run `yarn watch-poll`
+    2. Start Frontend -> open terminal then run command : yarn watch-poll
 
-    3. Access web app : http://localhost:3000/login
+    3. Access web app -> http://localhost:3000/login
 
 ### E. Contacts
 
