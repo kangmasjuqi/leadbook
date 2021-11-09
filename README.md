@@ -1,0 +1,67 @@
+# LEADBOOK 
+
+## PHP Full Stack Developer | ProgrammingChallenge
+
+### 0. My Env Snapshot
+
+    php -v
+
+        PHP 7.3.11 (cli) (built: Jun  5 2020 23:50:40) ( NTS )
+        Copyright (c) 1997-2018 The PHP Group
+        Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies
+
+    node -v
+
+        v14.17.1
+
+    npm -v
+
+        6.14.13
+
+    mysql -V
+
+        mysql  Ver 14.14 Distrib 5.7.30, for macos10.14 (x86_64) using  EditLine wrapper
+
+### A. Setup DB
+
+    1. in MySQL DB, run command : CREATE DATABASE `leadbook`;
+    2. update db config in .env file
+
+        DB_DATABASE=leadbook
+        DB_USERNAME=YOUR_USER
+        DB_PASSWORD=YOUR_PASS
+
+
+### B. Setup Backend
+
+    1. run command : mkdir storage && chmod -R 755 storage
+
+    2. run command : rm composer.lock && composer install
+
+    3. run command : php artisan key:generate
+
+    4. run command : php artisan migrate
+
+    5. run command : php artisan db:seed
+
+        *default generated user password would be : "secret"
+
+
+### C. Setup Frontend
+
+    1. run command : rm yarn.lock && yarn install
+
+
+### D. Access web app :
+
+    1. Start Backend : open terminal, run `php artisan serve`
+
+    2. Start Frontend : open terminal, run `yarn watch-poll`
+
+    3. Access web app : http://localhost:3000/login
+
+### E. Contacts
+
+    e : marjuqi[dot]rahmat[at]gmail[dot]com
+    p : +62-812-9579-8341
+
