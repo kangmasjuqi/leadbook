@@ -36,6 +36,17 @@ host('127.0.0.1')
 //     ->addSshOption('UserKnownHostsFile', '/dev/null')
 //     ->addSshOption('StrictHostKeyChecking', 'no');
 
+task('yarn:install', function () {
+    run('cd {{release_path}} && yarn install');
+});
+
+task('backend:start', function () {
+    run('cd {{release_path}} && php artisan serve');
+});
+
+task('frontend:start', function () {
+    run('cd {{release_path}} && yarn watch-poll');
+});
 
 // Tasks
 desc('Deploy Leadbook project');
@@ -51,6 +62,8 @@ desc('Deploy Leadbook project');
         'deploy:clear_paths',
         'deploy:symlink',
         'deploy:unlock',
+        'backend:start',
+        'frontend:start',
         'cleanup',
         'success'
     ]);
@@ -60,4 +73,6 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 before('deploy:symlink', 'artisan:migrate');
+
+after('deploy:vendors', 'yarn:install');
 
